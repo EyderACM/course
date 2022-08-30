@@ -1,16 +1,15 @@
-
 export function foo(array: number[]) {
-    let product = 1
-    
-    const sum = array.reduce((n, curr) => {
-        return n+curr 
-    }, 0)
+  let product = 1;
 
-    for (let num of array) {
-        product *= num
-    }
+  const sum = array.reduce((n, curr) => {
+    return n + curr;
+  }, 0);
 
-    return [sum, product]
+  for (let num of array) {
+    product *= num;
+  }
+
+  return [sum, product];
 }
 
-export const ANSWER_B = 'O(1)'
+export const ANSWER_B = "O(n)";
